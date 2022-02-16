@@ -12,7 +12,7 @@ The R script ward_movement_plot.R uses R base graphics to plot patient visits to
 * [RColorBrewer](https://www.r-graph-gallery.com/38-rcolorbrewers-palettes.html) version >= 1.1-2
 
 
-# Usage
+# Usage and output plots
 
 Get list of all options available:
 ```console
@@ -67,18 +67,18 @@ Example of use with test data:
 ```console
 Rscript --vanilla patient_movement_plot.R --locations_file visited_wards.csv --sample_info_file isolates_info.csv
 ```
-By default, patients are ordered on the y-axis by sample collection dates, wherein patients with earlier samples are plotted at the bottom.
+By default, patients are ordered on the y-axis by sample collection dates, wherein patients with earlier samples are plotted at the bottom. See resulting output plot below:
+
+![Patient movement plot 1](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.no_tree.pdf)
+
 
 Example of use with test data and phylogenetic tree:
 ```console
 Rscript --vanilla patient_movement_plot.R --locations_file visited_wards.csv --sample_info_file isolates_info.csv --phylogentic_tree_file isolates_tree.tree
 ```
-If a phylogenetic tree is included, patients are ordered on the y-axis based on the order of isolates in the phylogeny. Useful when a rooted phylogeny with a strong temporal phylogenetic signal is available.
+If a phylogenetic tree is included, patients are ordered on the y-axis based on the order of isolates in the phylogeny. Useful when a rooted phylogeny with a strong temporal phylogenetic signal is available. See resulting output plot below:
 
-# Output plots
-
-![Patient movement plot 1](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.no_tree.eps)
-
+![Patient movement plot 2](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.with_tree.pdf)
 
 # License
 
