@@ -69,7 +69,7 @@ Rscript --vanilla patient_movement_plot.R --locations_file visited_wards.csv --s
 ```
 By default, patients are ordered on the y-axis by sample collection dates, wherein patients with earlier samples are plotted at the bottom. See resulting output plot below:
 
-![Patient movement plot 1](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.no_tree.pdf)
+![Patient movement plot 1](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.no_tree.png)
 
 
 Example of use with test data and phylogenetic tree:
@@ -78,7 +78,7 @@ Rscript --vanilla patient_movement_plot.R --locations_file visited_wards.csv --s
 ```
 If a phylogenetic tree is included, patients are ordered on the y-axis based on the order of isolates in the phylogeny. Useful when a rooted phylogeny with a strong temporal phylogenetic signal is available. See resulting output plot below:
 
-![Patient movement plot 2](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.with_tree.pdf)
+![Patient movement plot 2](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.with_tree.png)
 
 # License
 
