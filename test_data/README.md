@@ -14,4 +14,5 @@ The test data consists of:
 
 - phylogentic_tree_file (optional): a phylogenetic file with sequenced samples
 
+NOTE: the data included here was made up, in any case represents the exact ward visits of real patients
 
