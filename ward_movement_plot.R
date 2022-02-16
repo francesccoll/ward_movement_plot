@@ -149,7 +149,7 @@ for(i in liStart:liEnd)
 # One row per patient will be produced
 liWidth = 6000
 liHeight = length(laPtu)*100
-postscript(file=plot_file,width=liWidth,height=liHeight)
+postscript(file=plot_file,width=liWidth,height=liHeight,bg="white")
 par(mar=c(5,5,10,5))
 plot(c(liStart, liEnd), c(0, (length(laPtu)+1)*2), type = "n", axes = F,xlim=c(liStart,liEnd),xlab="", ylab="")
 axis(side = 1,at=laXat,labels=laXlabels,cex=0.5)
