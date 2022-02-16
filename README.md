@@ -81,6 +81,24 @@ If a phylogenetic tree is included, patients are ordered on the y-axis based on 
 ![Patient movement plot 2](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.with_tree.png)
 > NOTE: the data plotted was made up, in any case represents the exact ward visits of real patients
 
+# Formatting input data
+
+The test data consists of:
+- locations_file: a csv file containing ward/room visits. The following fields are required:
+  - patient_id: unique patient identifier
+  - from_date: date of admission to ward
+  - to_date: date of discharge from ward
+  - ward: unique hospital ward/room identifier
+  - institution: unique institution/hospital identifier, where ward is contained
+  
+- sample_info_file: a csv file with sample information. The following fields are required:
+  - sample_id: unique sample identifier. This must match the sample ids in phylogentic_tree_file. 
+  - patient_id: unique patient identifier. This must match the one in locations_file.
+  - status: whether sample is negative (for the organisms/clone of study), positive or positive_sequenced.
+  - collection_date: date sample was collected.
+
+- phylogentic_tree_file (optional): a phylogenetic tree file with sequenced samples in newick format.
+
 # License
 
 ward_movement_plot.R  is a free software, licensed under [GNU General Public License v3.0](https://github.com/francesccoll/ward_movement_plot/blob/main/LICENSE)
