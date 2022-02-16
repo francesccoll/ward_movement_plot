@@ -77,6 +77,8 @@ If a phylogenetic tree is included, patients are ordered on the y-axis based on 
 
 # Output plots
 
+![Patient movement plot 1](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.no_tree.eps)
+
 
 # License
 
@@ -88,7 +90,9 @@ Use the [issues page](https://github.com/francesccoll/ward_movement_plot/issues)
 
 # Citations
 If you make use of this script, please cite any of these two papers:
+
 Coll, F. _et al_. Longitudinal genomic surveillance of MRSA in the UK reveals transmission patterns in hospitals and the community. _Science Translational Medicine_ 9, eaak9745 (2017). DOI: 10.1126/scitranslmed.aak9745
+
 Gouliouris, T., Coll, F. _et al_. Quantifying acquisition and transmission of _Enterococcus faecium_ using genomic surveillance. _Nature Microbiology_ 6, 103–111 (2021). DOI: 10.1038/s41564-020-00806-7
 
 
