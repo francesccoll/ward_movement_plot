@@ -67,7 +67,7 @@ Example of use with test data:
 ```console
 Rscript --vanilla patient_movement_plot.R --locations_file visited_wards.csv --sample_info_file isolates_info.csv
 ```
-By default, patients are ordered on the y-axis by sample collection dates, wherein patients with earlier samples are plotted at the bottom. See resulting output plot below:
+By default, patients are ordered on the y-axis by collection dates of positive samples, wherein patients with earlier positive samples are plotted at the bottom. See resulting output plot below:
 
 ![Patient movement plot 1](https://github.com/francesccoll/ward_movement_plot/blob/main/images/out_plot.no_tree.png)
 > NOTE: the data plotted was made up, in any case represents the exact ward visits of real patients
