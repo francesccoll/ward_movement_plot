@@ -86,18 +86,18 @@ If a phylogenetic tree is included, patients are ordered on the y-axis based on 
 The test data consists of:
 - locations_file: a csv file containing ward/room visits. The following fields are required:
   - patient_id: unique patient identifier
-  - from_date: date of admission to ward
-  - to_date: date of discharge from ward
+  - from_date: date of admission to ward (date format year-month-day)
+  - to_date: date of discharge from ward (date format year-month-day)
   - ward: unique hospital ward/room identifier
   - institution: unique institution/hospital identifier, where ward is contained
   
 - sample_info_file: a csv file with sample information. The following fields are required:
-  - sample_id: unique sample identifier. This must match the sample ids in phylogentic_tree_file. 
-  - patient_id: unique patient identifier. This must match the one in locations_file.
-  - status: whether sample is negative (for the organisms/clone of study), positive or positive_sequenced.
-  - collection_date: date sample was collected.
+  - sample_id: unique sample identifier. This must match the sample ids in phylogentic_tree_file
+  - patient_id: unique patient identifier. This must match the one in locations_file
+  - status: whether sample is negative (for the organisms/clone of study), positive or positive_sequenced
+  - collection_date: date sample was collected (date format year-month-day)
 
-- phylogentic_tree_file (optional): a phylogenetic tree file with sequenced samples in newick format.
+- phylogentic_tree_file (optional): a phylogenetic tree file with sequenced samples in newick format
 
 # License
 
