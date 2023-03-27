@@ -11,7 +11,7 @@ option_list = list(
   make_option(c("-l", "--locations_file"), type="character", action="store", default=NULL, help="File with rooms/wards visited by patient (required)"),
   make_option(c("-i", "--sample_info_file"), type="character", action="store", default=NULL, help="File with sample information (required)"),
   make_option(c("-o", "--output_plot_file"), type="character", action="store", default="out_plot.eps", help="output plot file name (required)"),
-  make_option(c("-t", "--phylogentic_tree_file"), type="character", action="store", default=NULL, help="phylogentic tree file (optional). Used to plot patients as samples ordered on the tree."),
+  make_option(c("-t", "--phylogenetic_tree_file"), type="character", action="store", default=NULL, help="phylogenetic tree file (optional). Used to plot patients as samples ordered on the tree."),
   make_option(c("-x", "--institution_stripes"), type="logical", action="store_true", default=TRUE, help="whether to display different institution with stripes [default=%default]"),
   make_option(c("-c", "--paint_common_wards_only"), type="logical", action="store_true", default=TRUE, help="whether to colour only wards visited by more than one patient [default=%default]"),
   make_option(c("-w", "--display_ward_labels"), type="logical", action="store_true", default=TRUE, help="whether to display ward labels on plot [default=%default]"),
@@ -37,7 +37,7 @@ library(RColorBrewer)
 # Files:
 patient_loc = opt$locations_file
 isolate_info = opt$sample_info_file
-tree_file = opt$phylogentic_tree_file
+tree_file = opt$phylogenetic_tree_file
 plot_file = opt$output_plot_file
 if(!file.exists(patient_loc)){ print(paste("Error: file ", patient_loc, " not found", sep="")); }
 if(!file.exists(isolate_info)){ print(paste("Error: file ", isolate_info, " not found", sep="")); }
