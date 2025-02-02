@@ -65,7 +65,7 @@ Options:
 
 Example of use with test data:
 ```console
-Rscript --vanilla patient_movement_plot.R --locations_file visited_wards.csv --sample_info_file isolates_info.csv
+Rscript --vanilla ward_movement_plot.R --locations_file visited_wards.csv --sample_info_file isolates_info.csv
 ```
 By default, patients are ordered on the y-axis by collection dates of positive samples, wherein patients with earlier positive samples are plotted at the bottom. See resulting output plot below:
 
@@ -74,7 +74,7 @@ By default, patients are ordered on the y-axis by collection dates of positive s
 
 Example of use with test data and phylogenetic tree:
 ```console
-Rscript --vanilla patient_movement_plot.R --locations_file visited_wards.csv --sample_info_file isolates_info.csv --phylogentic_tree_file isolates_tree.tree
+Rscript --vanilla ward_movement_plot.R --locations_file visited_wards.csv --sample_info_file isolates_info.csv --phylogentic_tree_file isolates_tree.tree
 ```
 If a phylogenetic tree is included, patients are ordered on the y-axis based on the order of isolates in the phylogeny. Useful when a rooted phylogeny with a strong temporal phylogenetic signal is available. See resulting output plot below:
 
