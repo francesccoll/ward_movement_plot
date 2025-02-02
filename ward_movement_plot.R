@@ -20,7 +20,8 @@ option_list = list(
   make_option(c("-v", "--sample_circle_size"), type="double", action="store", default=2, help="size of circles used to indicate samples [default=%default]"),
   make_option(c("-q", "--sample_dot_size"), type="double", action="store", default=0.5, help="size of dots used to indicate sequenced samples [default=%default]"),
   make_option(c("-y", "--sample_label_offset"), type="double", action="store", default=0.7, help="offset of sample labels [default= %default]"),
-  make_option(c("-z", "--sample_label_size"), type="double", action="store", default=0.6, help="size of sample labels [default= %default]")
+  make_option(c("-z", "--sample_label_size"), type="double", action="store", default=0.6, help="size of sample labels [default= %default]"),
+  make_option(c("-a", "--ward_label_size"), type="double", action="store", default=0.8, help="size of sample labels [default= %default]")
 );
 
 opt_parser = OptionParser(option_list=option_list);
@@ -53,6 +54,7 @@ sample_circle_size = opt$sample_circle_size
 sample_dot_size = opt$sample_dot_size
 sample_label_offset = opt$sample_label_offset
 sample_label_size = opt$sample_label_size
+ward_label_size = opt$ward_label_size
 # institution_stripes = TRUE
 # paint_common_wards_only = TRUE
 # display_ward_labels = TRUE
@@ -200,7 +202,7 @@ for(i in 1:length(laPtu)) # for each patient
 		# adding ward labels
     if (display_ward_labels == TRUE)
     {
-      if(length(laWardAbrX)>0){ thigmophobe.labels(x=laWardAbrX,y=laWardAbrY, labels = laWardAbr, cex=0.8, offset=0.2); }
+      if(length(laWardAbrX)>0){ thigmophobe.labels(x=laWardAbrX,y=laWardAbrY, labels = laWardAbr, cex=ward_label_size, offset=0.2); }
     }
 	}
 
